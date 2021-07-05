@@ -1,7 +1,7 @@
 # Welcome to Kube paradise
 
-[Create a ressource](/devops/index.md)
+[Create a ressource](create_ressource.md)
 
-[Debug](/cloud/index.md)
+[Debug](debug.md)
 
-[ressource template](/agility/index.md)
+[ressource template](ressource_template.md)
