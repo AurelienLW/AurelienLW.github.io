@@ -2,6 +2,6 @@
 
 {% for file in site.static_files %}
 {% if file.extname == ".md" %}
-[{{ file.basename }}](({/kubernetes/{file.path}}).html)
+[{{ file.basename }}](({{file.path}}).md)
 {% endif %}
 {% endfor %}    
