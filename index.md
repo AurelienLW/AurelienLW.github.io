@@ -9,3 +9,5 @@
 [Linux content](/linux/index.md)
 
 [Kubernetes content](/kubernetes/index.md)
+
+[infrastructure as code content](/iac/index.md)
