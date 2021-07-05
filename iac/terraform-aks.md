@@ -1,9 +1,23 @@
 # Deploy AKS with container registry and rights to it with terraform
 
 
-how to init in the Azure cloud 
+how to init in the Azure cloud :
+
+You need to create an account storage and then a container in it and use this container as a backend
+
+You can give access to it with a backend.tfvars file
+
+    resource_group_name= "iaac"
+    storage_account_name= "wands"
+    container_name= "bigwand"
+    key= "terraform.tfstate"
+
+
+the command to setup the backend is as follow
 
     terraform init -backend-config="backend.tfvars"
+
+
 
 how to apply
 
