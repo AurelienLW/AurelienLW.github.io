@@ -12,3 +12,6 @@ you can specify a service type
 
     kubectl expose deployment [deployment name] --port [port] --type=LoadBalancer
 
+# create namespace
+
+    kubectl create namespace [namespace name]

@@ -45,7 +45,6 @@ Because this method requires you to run kubectl as an authenticated user, you sh
 
 ex:
 
-    ---
     apiVersion: v1
     kind: Service
     metadata:
@@ -73,7 +72,6 @@ If your Node/VM IP address change, you need to deal with that
 
 ex:
 
-    ---
     apiVersion: v1
     kind: Service
     metadata:
