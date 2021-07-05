@@ -6,7 +6,7 @@
 
 [Agility content](/agility/index.md)
 
-[Linux content](/linux/index.md)
+[Linux content](/Linux/index.md)
 
 [Kubernetes content](/kubernetes/index.md)
 
