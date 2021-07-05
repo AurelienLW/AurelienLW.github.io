@@ -44,6 +44,7 @@ Allowing internal traffic, displaying internal dashboards, etc.
 Because this method requires you to run kubectl as an authenticated user, you should NOT use this to expose your service to the internet or use it for production services
 
 ex:
+
     ---
     apiVersion: v1
     kind: Service
@@ -71,6 +72,7 @@ If your Node/VM IP address change, you need to deal with that
 
 
 ex:
+
     ---
     apiVersion: v1
     kind: Service
