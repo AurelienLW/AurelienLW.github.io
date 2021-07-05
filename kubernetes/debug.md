@@ -15,3 +15,4 @@ you can always add yaml option at the end of the command to get the yaml descrip
     ping -a ip
     lsof -i
     nc -zv [ip]
+    netstat -tulpn
