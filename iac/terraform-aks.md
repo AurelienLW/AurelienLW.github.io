@@ -6,9 +6,11 @@ how to init in the Azure cloud
     terraform init -backend-config="backend.tfvars"
 
 how to apply
+
     terraform apply
 
 How to import existing ressources
+
     terraform [global options] import [options] ADDR ID
 
 main.tf

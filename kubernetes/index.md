@@ -1,6 +1,6 @@
 # Welcome to Kube paradise
 
-[Create a ressource](create_ressource.md)
+[Create a ressources](create_ressources.md)
 
 [Debug](debug.md)
 

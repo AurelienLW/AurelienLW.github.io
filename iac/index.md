@@ -1,3 +1,3 @@
 # Welcome to iac paradise
 
-[Terraform aks deployment(terraform-aks.md)
+[Terraform aks deployment](terraform-aks.md)
