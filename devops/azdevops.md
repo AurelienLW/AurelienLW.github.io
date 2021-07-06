@@ -63,7 +63,7 @@ The pipeline needs access to the grafana values file and to the bash script sett
     - task: Kubernetes@1
     inputs:
         connectionType: 'Kubernetes Service Connection'
-        kubernetesServiceEndpoint: 'Olivanders'
+        kubernetesServiceEndpoint: '[Kubernetes service Connection name]'
         namespace: 'default'
         command: 'apply'
         arguments: '-f ./kube'
@@ -80,9 +80,9 @@ The pipeline needs access to the grafana values file and to the bash script sett
     - task: HelmDeploy@0
     inputs:
         connectionType: 'Azure Resource Manager'
-        azureSubscription: 'Essai gratuit(643209d0-564a-47b0-9f07-925c7d1af717)'
-        azureResourceGroup: 'Hogwarts'
-        kubernetesCluster: 'Olivanders'
+        azureSubscription: '[Subscriptionname]'
+        azureResourceGroup: '[Ressource group name]'
+        kubernetesCluster: '[Aks name]'
         namespace: 'monitoring'
         command: 'install'
         chartType: 'Name'
@@ -93,9 +93,9 @@ The pipeline needs access to the grafana values file and to the bash script sett
     - task: HelmDeploy@0
     inputs:
         connectionType: 'Azure Resource Manager'
-        azureSubscription: 'Essai gratuit (643209d0-564a-47b0-9f07-925c7d1af717)'
-        azureResourceGroup: 'Hogwarts'
-        kubernetesCluster: 'Olivanders'
+        azureSubscription: '[Subscriptionname]'
+        azureResourceGroup: '[Ressource group name]'
+        kubernetesCluster: '[Aks name]'
         namespace: 'monitoring'
         command: 'install'
         chartType: 'Name'
