@@ -5,3 +5,5 @@
 [Debug](debug.md)
 
 [ressource template](ressource_template.md)
+
+[Flux](flux.md)
