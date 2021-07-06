@@ -84,3 +84,9 @@ To upgrade the Flux components to a newer version, download the latest flux bina
     git add -A && git commit -m "Upgrade to $(flux -v)" && git push
 
 
+
+Flux auto image update
+
+https://fluxcd.io/docs/guides/image-update/
+https://fluxcd.io/docs/guides/image-update/#azure-container-registry
+https://docs.microsoft.com/en-us/azure/aks/cluster-container-registry-integration 
