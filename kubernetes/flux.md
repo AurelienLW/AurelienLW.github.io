@@ -1,5 +1,9 @@
 # Flux stuff
 
+https://fluxcd.io/docs/concepts/
+
+
+
 
 ## Install Flux 
 

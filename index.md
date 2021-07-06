@@ -2,7 +2,9 @@
 
 Being a collection of what i used mostly instead of everything everyone should know
 
-Here's a cool cheat-sheet i'd check if i wanted to learn more about anything related to devops : [Cool stuff](https://lzone.de/cheat-sheet.html)
+Here's a cool cheat-sheet i'd check if i wanted to learn more about anything related to devops :
+
+ [Cool stuff](https://lzone.de/cheat-sheet.html)
 
 ## Quick access:
 
