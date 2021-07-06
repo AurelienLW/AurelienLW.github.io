@@ -1,3 +1,7 @@
-<h1>About us</h1>
-here is some info about me! 
-[back to home page](index.md)
+# Why seek balance when you can manipulate chaos
+
+My peers call me Aurel
+
+I'm a Cloud Evangelist - Devops Engineer
+
+[Back to home page](index.md)

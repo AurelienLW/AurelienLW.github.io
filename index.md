@@ -7,14 +7,18 @@ Here's a cool cheat-sheet i'd check if i wanted to learn more about anything rel
 ## Quick access:
 
 
-[DevOps content](/devops/index.md)
+[DevOps  ](/devops/index.md)
 
-[Cloud content](/cloud/index.md)
+[Cloud  ](/cloud/index.md)
 
-[Agility content](/agility/index.md)
+[Agility  ](/agility/index.md)
 
-[Linux content](/Linux/index.md)
+[Linux  ](/Linux/index.md)
 
-[Kubernetes content](/kubernetes/index.md)
+[Kubernetes  ](/kubernetes/index.md)
 
-[infrastructure as code content](/iac/index.md)
+[infrastructure as code  ](/iac/index.md)
+
+
+
+[About me](about.md)
