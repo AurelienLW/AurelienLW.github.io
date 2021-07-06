@@ -40,6 +40,9 @@ Verify that the controllers have started:
 create git repo object on the cluster (needs to specify ssh key of the repo)
 The better alternative is to create a machine-user whose sole purpose is to store credentials for automation. Using a machine-user also has the benefit of being able to be read-only or restricted to specific repositories if this is needed.
 
+https://docs.github.com/en/developers/overview/managing-deploy-keys#machine-users 
+
+
     flux create source git flux-system \
     --git-implementation=libgit2 \
     --url=ssh://git@ssh.dev.azure.com/v3/<org>/<project>/<repository> \
