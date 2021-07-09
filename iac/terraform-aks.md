@@ -37,18 +37,18 @@ main.tf
     features {}
     }
 
-    resource "azurerm_resource_group" "hogwarts" {
-    name     = "Hogwarts"
+    resource "azurerm_resource_group" "aurel-rg" {
+    name     = "aurelien-aks-dockercoins"
     location = "West Europe"
     }
 
-    resource "azurerm_kubernetes_cluster" "olivanders" {
-    name                = "Olivanders"
-    location            = azurerm_resource_group.hogwarts.location
-    resource_group_name = azurerm_resource_group.hogwarts.name
-    dns_prefix          = "olivandersask"
+    resource "azurerm_kubernetes_cluster" "aurelAks" {
+    name                = "AurelAks"
+    location            = azurerm_resource_group.aurel-rg.location
+    resource_group_name = azurerm_resource_group.aurel-rg.name
+    dns_prefix          = "aurelDnsAks"
 
-    node_resource_group = "olivanode"
+    node_resource_group = "AurelNRGAks"
 
     default_node_pool {
         name       = "default"
@@ -70,29 +70,22 @@ main.tf
     }
     }
 
-    resource "azurerm_container_registry" "spellContainerRegistry" {
-    name                = "SpellContainerRegistry"
-    resource_group_name = azurerm_resource_group.hogwarts.name
-    location            = azurerm_resource_group.hogwarts.location
-    sku                 = "Standard"
-    admin_enabled       = true
-
-    tags = {
-        environment = "dev"
-    }
-    }
-
-    # add the role to the identity the kubernetes cluster was assigned
-    resource "azurerm_role_assignment" "olivanders_to_spellContainerRegistry" {
-    scope                = azurerm_container_registry.spellContainerRegistry.id
-    role_definition_name = "AcrPull"
-    principal_id         = azurerm_kubernetes_cluster.olivanders.kubelet_identity[0].object_id
-    }
-
 output.tf
 
     resource "local_file" "kubeconfig" {
-    depends_on   = [azurerm_kubernetes_cluster.olivanders]
+    depends_on   = [azurerm_kubernetes_cluster.aurelAks]
     filename     = "kubeconfig"
-    content      = azurerm_kubernetes_cluster.olivanders.kube_config_raw
+    content      = azurerm_kubernetes_cluster.aurelAks.kube_config_raw
+    }
+    output "kube_config" {
+    value = azurerm_kubernetes_cluster.aurelAks.kube_config_raw
+    sensitive = true
+    }
+
+    output "resource_group_name" {
+    value = azurerm_kubernetes_cluster.aurelAks.resource_group_name
+    }
+
+    output "cluster_name" {
+    value = azurerm_kubernetes_cluster.aurelAks.name
     }
