@@ -19,7 +19,9 @@ Here's a cool cheat-sheet i'd check if i wanted to learn more about anything rel
 
 [Kubernetes  ](/kubernetes/index.md)
 
-[infrastructure as code  ](/iac/index.md)
+[Infrastructure as code  ](/iac/index.md)
+
+[Git  ](/git/index.md)
 
 
 
